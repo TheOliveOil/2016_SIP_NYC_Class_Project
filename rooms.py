@@ -24,8 +24,9 @@ pygame.display.set_caption("Room Floorplan")
 done = False
 
 # WRITE YOUR CODE HERE
-
-
+length_of_room = int(input("Enter length of room"))
+width_of_room = int(input("Enter width of room"))
+hannah = int(input("favorite number, please?"))
 
 # -------- Main Program Loop -----------
 while not done:
@@ -37,11 +38,12 @@ while not done:
 			(mouseX, mouseY) = pygame.mouse.get_pos()
 			print (mouseX, mouseY)
 
-def findParticle(particles, x, y):
-    for p in particles:
-        if math.hypot(p.x-x, p.y-y) <= p.size:
-            return p
-    return None
+# def findParticle(particles, x, y):
+#     for p in particles:
+#         if math.hypot(p.x-x, p.y-y) <= p.size:
+#             return p
+#     return None
+
 
 
 
@@ -50,7 +52,9 @@ def findParticle(particles, x, y):
 	screen.fill(WHITE)
 
     # --- Drawing code should go here
-	pygame.draw.rect(screen, GREY, (20, 20, 250, 100) , 0)
+    # xpoint, ypoint, width, height
+
+	pygame.draw.rect(screen, GREY, (20, 20, width_of_room, length_of_room) , 0)
 
 	# --- Go ahead and update the screen with what we've drawn.
 	pygame.display.flip()
