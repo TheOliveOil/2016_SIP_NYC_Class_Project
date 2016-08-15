@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+	body{
+		background-color:#d9d9d9;
+		padding-bottom:50px;
+	}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+/*      width: 80%;
+      height:100%;
+      margin-top:80px;
+      margin: auto;*/
+      margin:auto;
+      width:80%;
+    }
+
+button
+{
+	background-color: Transparent;
+	/*background-color:#4CAF50;*/
+	position:absolute;
+	font-color:blue;
+
+/*	top:300px;
+	left:500px;*/
+	/*font-size:100px;*/
+	font-size:100px;
+	color:#ffffe6;
+	/*padding: 32px 16px;*/
+	/*padding: 460px 550px;*/
+	width: 100%;
+	height:100%;
+	/*padding:30%;*/
+	/*size:400px;*/
+/*	top:500px;
+	left:300px;*/
+	/*background-color:#4CAF50;*/
+}
+
+/*html,body{height:100%;}
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}*/
+
+</style>
+
+
+
+
+<!-- #button_id { position: absolute; right: 5px; top: 5px; }
+ -->
+
+
+
+
+
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<header>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Plan It!</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+     <!--  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Room</a></li>
+          <li><a href="#">Yard</a></li>
+          <li><a href="#">Library</a></li>
+        </ul>
+      </li> -->
+      <li><a href="#">FAQ</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+</header>
+  
+<!-- <div class="container">
+
+
+     
+  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+</div> -->
+
+
+
+
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <button type= "button"> 
+      	<br> Get </br> Started! 
+      	</button>
+        <img src="frontyard.jpg" alt="Chania" width="460" height="345">
+
+      </div>
+
+      <div class="item">
+      	<button type= "button"> 
+      	<br> Get </br> Started! 
+      	</button>
+      	
+        <img src="dorm.jpg" alt="Chania" width="460" height="345">
+      </div>
+    
+      <div class="item">
+      	<button type= "button"> 
+      	<br> Get </br> Started! 
+      	</button>
+        <img src="familyroom.jpg" alt="Flower" width="460" height="345">
+      </div>
+
+      <div class="item">
+      	<button type= "button"> 
+      	<br> Get </br> Started! 
+      	</button>
+        <img src="book.jpg" alt="Flower" width="460" height="445">
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
